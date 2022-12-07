@@ -1,0 +1,52 @@
+* {
+    font-size: 17px;
+}
+
+main {
+    align-items: flex-start;
+}
+
+.container {
+    width: 80%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 3em !important;
+    color: #FFF;
+    text-align: center;
+    width: 80%;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+.fixTableHead {
+    overflow-y: auto;
+    height: 65%;
+    color:#F6F6F6;
+}
+.fixTableHead thead th {
+    position: sticky;
+    top: 0;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th,
+td {
+    padding: 8px 15px;
+    border: 2px solid #11101d;
+}
+tr:nth-child(odd){
+    background-color: #585391;
+}
+tr:nth-child(even){
+    background-color: #2d2952;
+}
+th{
+    background-color: #2d2952;
+}

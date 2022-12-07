@@ -1,0 +1,212 @@
+body {
+  overflow-y: scroll;
+}
+
+main {
+  background-color: #161424;
+  display: flex;
+  align-items: center;
+  justify-content: flexstart;
+  flex-direction: column;
+  gap: 10%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 150px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  min-width: 25%;
+  max-width: 25%;
+  height: 45%;
+  border: 1px solid black;
+  align-items: center;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 0 105px;
+}
+
+form h1 {
+  font-size: 2em;
+  text-align: center;
+  margin: 15px 0;
+}
+
+label {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+label[for="preco"] {
+  position: relative;
+}
+
+#preco,
+#nome {
+  width: 100% !important;
+  outline: none;
+  border: none;
+  padding-left: 10px;
+  height: 45px;
+  width: 250px;
+  border-radius: 10px;
+  font-size: 18px;
+  border: 1px solid black;
+}
+
+#labelCategoria {
+  display: flex !important;
+  flex-direction: row;
+  justify-content: center;
+  width: 80%;
+  position: relative;
+  gap: 30px;
+}
+
+#labelCategoria span {
+  font-size: 18px;
+}
+
+select {
+  width: 200px;
+  height: 35px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+#imageBtn {
+  width: 200px;
+  height: 30px;
+  background-color: #fff;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+#imagemProduto {
+  position: absolute;
+  left: 85%;
+  transform: translateX(-80%);
+  height: 300px;
+  width: 400px;
+  display: none;
+}
+
+.btnFormWrapper {
+  display: flex;
+  gap: 25px;
+}
+
+.btnForm {
+  width: 150px;
+  height: 30px;
+  margin: 10px 0;
+  border: none;
+  cursor: pointer;
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+
+#preco:not(:placeholder-shown) {
+  padding-left: 40px;
+}
+
+.rs {
+  position: absolute;
+  height: 99%;
+  padding: 0 5px;
+  top: 50%;
+  left: 1px;
+  transform: translateY(-50%);
+  color: #000;
+  border-radius: 12px 0 0 12px;
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  transition: 0.4s ease;
+}
+
+#preco:not(:placeholder-shown) ~ .rs {
+  opacity: 1;
+}
+#btnSubmit {
+  background-color: #00ff00;
+  box-shadow: 0 8px 0 #058605;
+}
+
+#btnReset {
+  background-color: #ff0000;
+  box-shadow: 0 8px 0 #8b0606;
+}
+#btnReset:active {
+  position: relative;
+  top: 8px;
+  box-shadow: none;
+}
+
+#btnSubmit:active {
+  position: relative;
+  top: 8px;
+  box-shadow: none;
+}
+
+img {
+  height: 30px;
+  min-width: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+img::before {
+  content: "";
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  background: linear-gradient(to left, #000, #fff);
+  animation: imgBackgroundRotate 5s ease infinite;
+}
+
+.fixTableHead {
+  overflow-y: auto;
+  height: 65%;
+  color: #f6f6f6;
+  margin-top: 50px;
+}
+.fixTableHead thead th {
+  position: sticky;
+  top: 0;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th,
+td {
+  padding: 8px 15px;
+  border: 2px solid #11101d;
+}
+tr:nth-child(odd) {
+  background-color: #585391;
+}
+tr:nth-child(even) {
+  background-color: #2d2952;
+}
+th {
+  background-color: #2d2952;
+}

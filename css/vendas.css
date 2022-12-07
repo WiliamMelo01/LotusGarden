@@ -1,0 +1,13 @@
+body{
+    overflow-y: scroll;
+}
+h1,
+table {
+    color: #fff;
+}
+main h1 {
+    font-size: 5em;
+    width: 100%;
+    text-align: center;
+}
+

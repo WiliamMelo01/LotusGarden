@@ -1,0 +1,45 @@
+html,
+body {
+    overflow-x: hidden;
+}
+body {
+    background-color: #11101d;
+    color: #fff;
+    width: 100vw;
+    padding-bottom: 30px;
+}
+
+h1 {
+    text-align: center;
+    margin: 15px 0;
+}
+
+tr:nth-child(even) {
+    background-color: #4d4970;
+}
+
+button {
+    border:none;
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 5px 10px;
+    background: #d3ad7f;
+    cursor: pointer;
+    text-decoration: none;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 9999;
+}
+
+button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+button a:hover {
+    color: #fff;
+}
+#modalStatusVenda {
+    color: #000;
+}
